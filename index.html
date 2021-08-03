@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4 border">
+        <div class="row text-center my-4">
+            <div class="col-md-12">
+                <h1 class="title">Shopping List</h1>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-4 offset-md-4">
+                <form action="#" class="">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control addItemInput">
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary addItemButon">Add Item</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row mb-4 d-none">
+            <div class="sort-div col-md-12 text-center my-4">
+                <button class="btn btn-primary btn-warning sortAscButton">Sort asc</button>
+                <button class="btn btn-primary btn-warning sortDescButton">Sort desc</button>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <table id="myTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Item description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="shopping-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
